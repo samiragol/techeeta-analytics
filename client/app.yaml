@@ -1,0 +1,7 @@
+runtime: static
+handlers:
+  - url: /.*
+    static_files:
+      path: client/build
+      upload_path: client/build
+    expiration: "1d"  # Cache static files for 1 day
